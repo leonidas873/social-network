@@ -1,1 +1,3 @@
-export const wtf = "ADsda sa";
+import LoginComponent from "./LoginComponent/LoginComponent";
+
+export { LoginComponent }

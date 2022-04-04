@@ -1,0 +1,43 @@
+:root {
+    --primary: #e75349;
+}
+
+.primary {
+    color: #fff !important;
+    border-color: var(--primary) !important;
+    background: var(--primary) !important;
+    text-shadow: 0 -1px 0 rgb(0 0 0 / 12%);
+    box-shadow: 0 2px 0 rgb(0 0 0 / 5%);
+}
+
+.default:hover {
+    border-color: var(--primary) !important;
+    color: var(--primary) !important;
+}
+
+.mainLoginComponent {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #e75349;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+#loginForm .login-form {
+    max-width: 300px;
+}
+
+#loginForm .login-form-forgot {
+    float: right;
+}
+
+#loginForm .ant-col-rtl .login-form-forgot {
+    float: left;
+}
+
+#loginForm .login-form-button {
+    width: 100%;
+}

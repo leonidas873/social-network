@@ -1,1 +1,1 @@
-const SERVER__URL = "DASDAAD";
+export const SERVER__URL = "DASDAAD";

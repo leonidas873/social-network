@@ -1,0 +1,114 @@
+.footerComponent {
+    width: 100%;
+    max-width: 1140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 70px;
+    padding: 0 20px;
+}
+
+.footerComponent ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.footerComponent ul li {
+    padding: 0 10px;
+    position: relative;
+}
+
+.footerComponent ul li::after {
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: 100%;
+    width: 1px;
+    height: 80%;
+    background-color: white;
+}
+
+.footerComponent ul li:last-child::after {
+    display: none;
+}
+
+.footerComponent ul li a {
+    font-size: 14px;
+}
+
+.footerComponent>div {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-left: 20px;
+    white-space: nowrap;
+}
+
+.footerComponent>div svg {
+    margin-right: 5px;
+}
+
+.login ul li a {
+    color: white;
+}
+
+.default {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.default img {
+    width: 100px;
+}
+
+.default ul li a {
+    color: #b2b2b2;
+}
+
+.default ul li a:hover {
+    color: #e75349;
+}
+
+.default .footerComponent {
+    margin: 0;
+    padding: 30px 0;
+}
+
+.default .footerComponent>div {
+    color: #b2b2b2;
+}
+
+.default .footerComponent ul li::after {
+    background-color: #b2b2b2;
+}
+
+@media screen and (max-width: 1200px) {
+    .footerComponent {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footerComponent>div {
+        margin-top: 15px;
+        margin-left: 0;
+    }
+
+    .default img {
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .footerComponent ul {
+        justify-content: center;
+    }
+
+    .footerComponent ul li {
+        margin-top: 5px;
+    }
+}

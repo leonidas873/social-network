@@ -1,9 +1,14 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import 'antd/dist/antd.css';
+import { Login } from './pages';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-
+      <Routes>
+        <Route path="/" element={<Login />} />
+      </Routes>
     </div>
   );
 }

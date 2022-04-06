@@ -82,7 +82,16 @@ border-radius:5px;
     white-space: nowrap;
     background:#E44D3A;
     color:white;
-    border:none;
     outline:none;
     border-radius:4px;
+    border: 2px solid white;
+    transition:0.4s;
+    cursor:pointer;
+}
+
+.dropdownBody button:hover{
+    background:white;
+    color:#E44D3A;
+    border: 2px solid #E44D3A;
+
 }
